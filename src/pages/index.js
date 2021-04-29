@@ -4,7 +4,7 @@ import Sidebar from '../components/Sidebar'
 import {useState} from "react";
 import BannerSection from "../components/BannerSection";
 import Info from '../components/Info';
-import { HomeObj1 } from '../components/Info/Data';
+import { HomeObj1, HomeObj2, HomeObj3 } from '../components/Info/Data';
 
 const Home = () => {
 
@@ -20,6 +20,8 @@ const Home = () => {
         <Navbar toggle={toggle}/>
         <BannerSection/>
         <Info {...HomeObj1}/>
+        <Info {...HomeObj2}/>
+        <Info {...HomeObj3}/>
         </>
     );
 };
