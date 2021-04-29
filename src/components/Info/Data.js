@@ -7,7 +7,7 @@ export const HomeObj1 = {
   HeadLine: "Where you meet us",
   description:
     "The IEI Students' Chapter - CSE of Academy Of Technology proudly presents its unique creation in the form of the Web Magazine ‘Ingenium'. This serves as a platform to highlight the literary, artistic segment, Tech enthusiasm and much more of our AOT family.",
-  ButtonLabel: "Show Featured",
+  ButtonLabel: "Read More",
   imgStart: false,
   img: require("../../images/img1.png").default,
   alt: "",
@@ -17,12 +17,12 @@ export const HomeObj1 = {
 };
 
 export const HomeObj2 = {
-  id: "Abhohoman",
+  id: "Abohoman",
   lightBg: true,
   lightText: false,
   lightTextDesc: false,
   topLine: "CULTURAL MAGAZINE",
-  HeadLine: "Abhohoman",
+  HeadLine: "Abohoman",
   description:
       "Abohoman is the official Cultural Magazine of AOT. It is where the pen meets paper, where all of your imagination and stories come to life. Check out some of the wonderful stories your mates have to share!",
   ButtonLabel: "Show Featured",

@@ -36,6 +36,11 @@ const BannerSection = () => {
             onMouseLeave={onHover}
             primary={true}
             dark={true}
+            smooth={true}
+            duration={1000}
+            spy={true}
+            exact="true"
+            offset={-80}
           >
             Explore Now {hover ? <ArrowForward /> : <ArrowRight />}
           </Button>

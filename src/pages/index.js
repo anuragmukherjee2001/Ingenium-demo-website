@@ -1,29 +1,30 @@
-import React from 'react'
-import Navbar from '../components/Navbar'
-import Sidebar from '../components/Sidebar'
-import {useState} from "react";
+import React from "react";
+import Navbar from "../components/Navbar";
+import Sidebar from "../components/Sidebar";
+import { useState } from "react";
 import BannerSection from "../components/BannerSection";
-import Info from '../components/Info';
-import { HomeObj1, HomeObj2, HomeObj3 } from '../components/Info/Data';
+import Info from "../components/Info";
+import { HomeObj1, HomeObj2, HomeObj3 } from "../components/Info/Data";
+import Gallery from "../components/Gallery";
 
 const Home = () => {
+  const [isOpen, settoOpen] = useState(false);
 
-    const [isOpen, settoOpen] = useState(false);
+  const toggle = () => {
+    settoOpen(!isOpen);
+  };
 
-    const toggle = () => {
-        settoOpen(!isOpen);
-    }
-
-    return (
-        <>
-        <Sidebar isOpen = {isOpen} toggle={toggle}/>
-        <Navbar toggle={toggle}/>
-        <BannerSection/>
-        <Info {...HomeObj1}/>
-        <Info {...HomeObj2}/>
-        <Info {...HomeObj3}/>
-        </>
-    );
+  return (
+    <>
+      <Sidebar isOpen={isOpen} toggle={toggle} />
+      <Navbar toggle={toggle} />
+      <BannerSection />
+      <Info {...HomeObj1} />
+      <Info {...HomeObj2} />
+      <Info {...HomeObj3} />
+      <Gallery />
+    </>
+  );
 };
 
-export default Home
+export default Home;

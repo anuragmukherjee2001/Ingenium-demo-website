@@ -10,7 +10,7 @@ import {
   NavLinks,
 } from "./NavbarElements";
 
-const Navbar = ({toggle}) => {
+const Navbar = ({ toggle }) => {
   return (
     <>
       <Nav>
@@ -21,16 +21,52 @@ const Navbar = ({toggle}) => {
           </MobileIcon>
           <NavMenu>
             <NavItems>
-              <NavLinks to="editorial">Editorial</NavLinks>
+              <NavLinks
+                to="editorial"
+                smooth={true}
+                duration={1000}
+                spy={true}
+                exact="true"
+                offset={-80}
+              >
+                Editorial
+              </NavLinks>
             </NavItems>
             <NavItems>
-              <NavLinks to="Prayukti">Prayukti</NavLinks>
+              <NavLinks
+                to="Abohoman"
+                smooth={true}
+                duration={1000}
+                spy={true}
+                exact="true"
+                offset={-80}
+              >
+                Abohoman
+              </NavLinks>
             </NavItems>
             <NavItems>
-              <NavLinks to="Abhohoman">Abhohoman</NavLinks>
+              <NavLinks
+                to="Prayukti"
+                smooth={true}
+                duration={1000}
+                spy={true}
+                exact="true"
+                offset={-80}
+              >
+                Prayukti
+              </NavLinks>
             </NavItems>
             <NavItems>
-              <NavLinks to="Gallery">Gallery</NavLinks>
+              <NavLinks
+                to="Gallery"
+                smooth={true}
+                duration={1000}
+                spy={true}
+                exact="true"
+                offset={-80}
+              >
+                Gallery
+              </NavLinks>
             </NavItems>
           </NavMenu>
         </NavbarContainer>
