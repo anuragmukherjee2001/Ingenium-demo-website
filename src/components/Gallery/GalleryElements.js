@@ -1,12 +1,15 @@
 import styled from "styled-components";
 
 export const GalleryContainer = styled.div`
-  height: 800px;
+  height: 600px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background: #010606;
+  background-color: #8BC6EC;
+  background-image: linear-gradient(135deg, #8BC6EC 0%, #9599E2 100%);
+
+
 
   @media screen and (max-width: 768px) {
     height: 1100px;
@@ -63,7 +66,7 @@ export const GalleryIcon = styled.img`
 
 export const GalleryHeading = styled.h1`
   font-size: 2.5rem;
-  color: #fff;
+  color: #170606;
   margin-bottom: 64px;
 
   @media screen and (max-width: 480px) {
@@ -143,3 +146,4 @@ export const FlipCardBack = styled.div`
   color: white;
   transform: rotateY(180deg);
 `;
+

@@ -3,8 +3,8 @@ import "./Copyright.css";
 
 const Copyright = () => {
     return (
-        <div>
-            <p>Hello World</p>
+        <div className="copy">
+            <p>Ingenium Made with love  © 2021</p>
         </div>
     )
 }

@@ -5,13 +5,15 @@ import Icon3 from "../../images/img6.jpg";
 import {
   GalleryContainer,
   GalleryHeading,
-  GalleryH2,
-  GalleryP,
-  GalleryIcon,
   GalleryWrapper,
-  GalleryCard,
   Button,
 } from "./GalleryElements";
+import './Gallerys.css';
+
+let myStyle = {
+  width: "298px",
+  height: "198px",
+}
 
 const Gallery = () => {
   return (
@@ -19,23 +21,50 @@ const Gallery = () => {
       <GalleryContainer id="Gallery">
         <GalleryHeading>Gallery</GalleryHeading>
         <GalleryWrapper>
-          <GalleryCard>
-            <GalleryIcon src={Icon1} />
-            <GalleryH2>ddddd</GalleryH2>
-            <GalleryP>Hi this is Anurag signing off</GalleryP>
-          </GalleryCard>
-          <GalleryCard>
-            <GalleryIcon src={Icon2} />
-            <GalleryH2>ddddd</GalleryH2>
-            <GalleryP>Hi this is Anurag signing off</GalleryP>
-          </GalleryCard>
-          <GalleryCard>
-            <GalleryIcon src={Icon3} />
-            <GalleryH2>ddddd</GalleryH2>
-            <GalleryP>Hi this is Anurag signing off</GalleryP>
-          </GalleryCard>
-          <Button>Read More</Button>
+          <div className="flip-card">
+            <div className="flip-card-inner">
+              <div className="flip-card-front">
+                <img src={Icon3} alt="Avatar" style={myStyle}/>
+              </div>
+              <div className="flip-card-back">
+                <h3>Photography</h3>
+                <hr/>
+                <h2>Mountains</h2>
+                <h4>Priyanshu Chatterjee</h4>
+                <p>15 April 2021</p>
+              </div>
+            </div>
+          </div>
+          <div className="flip-card">
+            <div className="flip-card-inner">
+              <div className="flip-card-front">
+                <img src={Icon2} alt="Avatar" style={myStyle}/>
+              </div>
+              <div className="flip-card-back">
+                <h3>Photography</h3>
+                <hr/>
+                <h2>Mountains</h2>
+                <h4>Davison Hastings</h4>
+                <p>26 Apr 2021</p>
+              </div>
+            </div>
+          </div>
+          <div className="flip-card">
+            <div className="flip-card-inner">
+              <div className="flip-card-front">
+                <img src={Icon1} alt="Avatar" style={myStyle}/>
+              </div>
+              <div className="flip-card-back">
+                <h3>Photography</h3>
+                <hr/>
+                <h2>Forest</h2>
+                <h4>Supriya Karmakar</h4>
+                <p>15 April 2021</p>
+              </div>
+            </div>
+          </div>
         </GalleryWrapper>
+        <Button className="btn">Show Featured</Button>
       </GalleryContainer>
     </>
   );

@@ -27,7 +27,6 @@ const Home = () => {
       <Gallery />
       <Footer/>
       <Copyright/>
-
     </>
   );
 };
