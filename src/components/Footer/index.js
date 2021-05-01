@@ -39,6 +39,21 @@ const Footer = () => {
               </li>
             </ul>
           </div>
+          <div className="col">
+            <h4>Subscribe for the latest posts</h4>
+            <form>
+            <div class="containers" style={{backgroundColor: "white"}}>
+    <input type="text" placeholder="Name" name="name" required/>
+    <input type="text" placeholder="Email address" name="mail" required/>
+    <label>
+    </label>
+  </div>
+
+  <div class="container">
+    <input type="submit" value="Subscribe"/>
+  </div>
+</form>
+          </div>
         </div>
       </div>
     </footer>
