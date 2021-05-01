@@ -13,9 +13,6 @@ ul{
     list-style: none;
 }
 
-a{
-    text-decoration: none;
-}
 
 .col{
     width: 33%;
@@ -56,7 +53,7 @@ a{
     margin-bottom: 10px;
 }
 
-.col ul li a{
+.col ul li p{
     font-size: 16px;
     text-transform: capitalize;
     color: silver;
@@ -66,10 +63,11 @@ a{
     transition: all 0.3s ease-in-out;
 }
 
-.col ul li a:hover{
+.col ul li p:hover{
 
     color: #ffffff;
     padding-left: 20px;
+    cursor: pointer;
 }
 
 .col .social-links{

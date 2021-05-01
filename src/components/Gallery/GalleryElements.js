@@ -1,5 +1,4 @@
 import styled from "styled-components";
-import {Img1} from "../../images/img2.jpg";
 
 export const GalleryContainer = styled.div`
   height: 700px;

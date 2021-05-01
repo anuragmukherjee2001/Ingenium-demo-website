@@ -10,7 +10,6 @@ import {
   Button,
   ArrowForward,
   ArrowRight,
-  Button2,
 } from "./BannerElements";
 import Video from "../../videos/video.mp4";
 import { useState } from "react";

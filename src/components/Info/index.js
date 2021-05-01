@@ -1,7 +1,7 @@
-import React, {useEffect} from "react";
+import React, { useEffect } from "react";
 import { Button } from "../ButtonElements";
-import {useState} from "react";
-import Aos from 'aos';
+import { useState } from "react";
+import Aos from "aos";
 import "aos/dist/aos.css";
 import {
   ImgWrap,
@@ -17,7 +17,7 @@ import {
   BtnWrap,
   Img,
   ArrowRight,
-  ArrowForward
+  ArrowForward,
 } from "./InfoElements";
 
 const Info = ({
@@ -36,14 +36,13 @@ const Info = ({
   dark,
   dark2,
 }) => {
-
   const [hover, setHover] = useState(false);
 
   const onHover = () => {
     setHover(!hover);
   };
-  useEffect(() =>{
-    Aos.init({duration: 2000, delay: 50, offset:150});
+  useEffect(() => {
+    Aos.init({ duration: 2000, delay: 50, offset: 150 });
   }, []);
   return (
     <>
@@ -53,10 +52,14 @@ const Info = ({
             <Column1>
               <TextWrapper>
                 <TopLine>{topLine}</TopLine>
-                <Heading lightText={lightText}  data-aos="zoom-in">{HeadLine}</Heading>
+                <Heading lightText={lightText} data-aos="zoom-in">
+                  {HeadLine}
+                </Heading>
                 <Subtitle darkText={darkText}>{description}</Subtitle>
                 <BtnWrap data-aos="slide-up">
                   <Button
+                    onMouseEnter={onHover}
+                    onMouseLeave={onHover}
                     smooth={true}
                     duration={500}
                     spy={true}
@@ -72,8 +75,8 @@ const Info = ({
               </TextWrapper>
             </Column1>
             <Column2>
-              <ImgWrap  data-aos="zoom-in-down">
-                <Img src={img} alt={alt}/>
+              <ImgWrap data-aos="zoom-in-down">
+                <Img src={img} alt={alt} />
               </ImgWrap>
             </Column2>
           </InfoRow>

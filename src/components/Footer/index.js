@@ -11,7 +11,7 @@ const Footer = () => {
             <h4>About Us</h4>
             <ul>
               <li>
-                <a href="#">Created by love</a>
+                <p>Academy Of technology</p>
               </li>
             </ul>
           </div>
@@ -19,13 +19,13 @@ const Footer = () => {
             <h4>Contents</h4>
             <ul>
               <li>
-                <a href="#">Prayukti</a>
+                <p>Prayukti</p>
               </li>
               <li>
-                <a href="#">Abohoman</a>
+                <p>Abohoman</p>
               </li>
               <li>
-                <a href="#">Gallery</a>
+                <p>Gallery</p>
               </li>
             </ul>
           </div>
@@ -33,9 +33,9 @@ const Footer = () => {
             <h4>Follow us</h4>
             <ul>
               <li>
-                <a><FiFacebooks className="social-links facebook" /></a>
-                <a><Instagram className="social-links instagram" /></a>
-                <a><Twitter className="social-links twitter" /></a>
+                <p><FiFacebooks className="social-links facebook" /></p>
+                <p><Instagram className="social-links instagram" /></p>
+                <p><Twitter className="social-links twitter" /></p>
               </li>
             </ul>
           </div>
