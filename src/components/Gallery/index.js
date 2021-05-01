@@ -1,7 +1,9 @@
-import React from "react";
+import React, {useEffect} from "react";
 import Icon1 from "../../images/img4.jpg";
 import Icon2 from "../../images/img5.jpg";
 import Icon3 from "../../images/img6.jpg";
+import Aos from 'aos';
+import "aos/dist/aos.css";
 import {
   GalleryContainer,
   GalleryHeading,
@@ -16,12 +18,15 @@ let myStyle = {
 }
 
 const Gallery = () => {
+  useEffect(() =>{
+      Aos.init({duration: 2000, delay: 50, offset:150});
+  }, []);
   return (
     <>
       <GalleryContainer id="Gallery">
-        <GalleryHeading>Gallery</GalleryHeading>
+        <GalleryHeading data-aos="fade-up">Gallery</GalleryHeading>
         <GalleryWrapper>
-          <div className="flip-card">
+          <div className="flip-card" data-aos="fade-left">
             <div className="flip-card-inner">
               <div className="flip-card-front">
                 <img src={Icon3} alt="Avatar" style={myStyle}/>
@@ -35,7 +40,7 @@ const Gallery = () => {
               </div>
             </div>
           </div>
-          <div className="flip-card">
+          <div className="flip-card" data-aos="fade-up">
             <div className="flip-card-inner">
               <div className="flip-card-front">
                 <img src={Icon2} alt="Avatar" style={myStyle}/>
@@ -49,7 +54,7 @@ const Gallery = () => {
               </div>
             </div>
           </div>
-          <div className="flip-card">
+          <div className="flip-card" data-aos="fade-right">
             <div className="flip-card-inner">
               <div className="flip-card-front">
                 <img src={Icon1} alt="Avatar" style={myStyle}/>
@@ -64,7 +69,7 @@ const Gallery = () => {
             </div>
           </div>
         </GalleryWrapper>
-        <Button className="btn">Show Featured</Button>
+        <Button data-aos="slide-up">Show Featured</Button>
       </GalleryContainer>
     </>
   );

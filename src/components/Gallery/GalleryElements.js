@@ -1,7 +1,8 @@
 import styled from "styled-components";
+import {Img1} from "../../images/img2.jpg";
 
 export const GalleryContainer = styled.div`
-  height: 600px;
+  height: 700px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -97,11 +98,13 @@ export const Button = styled.button`
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-top: 30px;
   transition: all 0.2s ease-in-out;
 
   &:hover {
-    transition: all 0.2s ease-in-out;
+    transition: all 0.5s ease-in-out;
     background: #90dae0;
+    color: black;
   }
 `;
 
@@ -146,4 +149,3 @@ export const FlipCardBack = styled.div`
   color: white;
   transform: rotateY(180deg);
 `;
-

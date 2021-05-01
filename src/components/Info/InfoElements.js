@@ -1,8 +1,9 @@
 import styled from "styled-components";
+import {MdArrowForward, MdKeyboardArrowRight} from "react-icons/all";
 
 export const InfoContainer = styled.div`
   color: #fff;
-  background: ${({ lightBg }) => (lightBg ? "#cce4e6" : "#050806")};
+  background: ${({ lightBg }) => (lightBg ? "#cce4e6" : "#050806")}; 
   //background: ${({ lightBg }) => (lightBg==='white' && '#fff' || lightBg === 'black' && '#000' || lightBg==='gray' && 'red')};
   
   @media screen and (max-width: 768px) {
@@ -66,7 +67,7 @@ export const TopLine = styled.div`
 export const Heading = styled.h1`
   margin-bottom: 24px;
   font-size: 48px;
-  line-height: 40px;
+  line-height: 55px;
   font-weight: 600;
   color: ${({ lightText }) => (lightText ? "#f7f8fa" : "#010606")};
 
@@ -81,6 +82,7 @@ export const Subtitle = styled.p`
   font-size: 18px;
   line-height: 24px;
   margin-top: 40px;
+  text-align: justify;
   color: ${({ darkText }) => (darkText ? "#010606" : "#fff")};
 `;
 
@@ -106,4 +108,14 @@ export const Img = styled.img`
     transition: all 0.2s ease-in-out;
     cursor: pointer;
   }
+`;
+
+export const ArrowForward = styled(MdArrowForward)`
+  margin-left: 8px;
+  font-size: 28px;
+`;
+
+export const ArrowRight = styled(MdKeyboardArrowRight)`
+  margin-left: 8px;
+  font-size: 28px;
 `;
