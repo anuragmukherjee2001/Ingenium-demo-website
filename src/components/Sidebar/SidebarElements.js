@@ -32,8 +32,7 @@ export const Icon = styled.div`
 `;
 
 export const SidebarWrapper = styled.div`
-  display: flex;
-  align-items: center;
+  color: #fff;
 `;
 
 export const SidebarMenu = styled.ul`
