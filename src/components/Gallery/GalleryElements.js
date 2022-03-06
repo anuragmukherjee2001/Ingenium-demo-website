@@ -67,6 +67,7 @@ export const GalleryIcon = styled.img`
 export const GalleryHeading = styled.h1`
   font-size: 2.5rem;
   color: #170606;
+  font-family: 'Open Sans Condensed', sans-serif;
   margin-bottom: 64px;
 
   @media screen and (max-width: 480px) {
