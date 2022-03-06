@@ -20,7 +20,7 @@ const Navbar = ({ toggle }) => {
     <>
       <Nav>
         <NavbarContainer>
-          <NavLogo to='/' onClick={toHome}>Ingenium</NavLogo>
+          <NavLogo to='/' onClick={toHome}>TechFreak</NavLogo>
           <MobileIcon onClick={toggle}>
             <FaBars />
           </MobileIcon>
@@ -34,7 +34,7 @@ const Navbar = ({ toggle }) => {
                 exact="true"
                 offset={-80}
               >
-                Editorial
+                About
               </NavLinks>
             </NavItems>
             <NavItems>
@@ -46,7 +46,7 @@ const Navbar = ({ toggle }) => {
                 exact="true"
                 offset={-80}
               >
-                Abohoman
+                Stories
               </NavLinks>
             </NavItems>
             <NavItems>
@@ -58,7 +58,7 @@ const Navbar = ({ toggle }) => {
                 exact="true"
                 offset={-80}
               >
-                Prayukti
+                Blogs
               </NavLinks>
             </NavItems>
             <NavItems>

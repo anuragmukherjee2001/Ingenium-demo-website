@@ -25,7 +25,7 @@ const Sidebar = ({ isOpen, toggle }) => {
             exact="true"
             offset={-80}
           >
-            Editorial
+            About
           </SidebarLink>
           <SidebarLink
             to="Abohoman"
@@ -36,7 +36,7 @@ const Sidebar = ({ isOpen, toggle }) => {
             exact="true"
             offset={-80}
           >
-            Abohoman
+            Stories
           </SidebarLink>
           <SidebarLink
             to="Prayukti"
@@ -47,7 +47,7 @@ const Sidebar = ({ isOpen, toggle }) => {
             exact="true"
             offset={-80}
           >
-            Prayukti
+            Blogs
           </SidebarLink>
           <SidebarLink
             to="Gallery"

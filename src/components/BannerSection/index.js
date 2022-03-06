@@ -27,8 +27,8 @@ const BannerSection = () => {
         <VideoBg autoPlay loop muted src={Video} type="video/mp4" />
       </BannerBg>
       <BannerContents>
-        <BannerHeading>Ingenium</BannerHeading>
-        <BannerPara>Thoughts, stories and ideas.</BannerPara>
+        <BannerHeading>TechFreak</BannerHeading>
+        <BannerPara>Tech, stories and implementations.</BannerPara>
         <BannerBtnWrapper>
           <Button
             to="editorial"

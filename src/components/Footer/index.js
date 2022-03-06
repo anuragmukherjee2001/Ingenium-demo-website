@@ -11,7 +11,7 @@ const Footer = () => {
             <h4>About Us</h4>
             <ul>
               <li>
-                <p>Academy Of technology</p>
+                <p>TechFreak</p>
               </li>
             </ul>
           </div>
@@ -19,10 +19,10 @@ const Footer = () => {
             <h4>Contents</h4>
             <ul>
               <li>
-                <p>Prayukti</p>
+                <p>Blogs</p>
               </li>
               <li>
-                <p>Abohoman</p>
+                <p>Stories</p>
               </li>
               <li>
                 <p>Gallery</p>

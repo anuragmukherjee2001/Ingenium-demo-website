@@ -4,7 +4,7 @@ import "./Copyright.css";
 const Copyright = () => {
     return (
         <div className="copy">
-            <p>Ingenium Made with love  © 2021</p>
+            <p>TechFreak Made with love  © 2021</p>
         </div>
     )
 }
